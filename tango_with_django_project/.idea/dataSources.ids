@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source source="LOCAL" name="Django default" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="080e12ec-246d-4f8b-b980-9a550d178a8a">
-    <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-    <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/tango_with_django_project/../rango.db</jdbc-url>
-    <libraries/>
+  <data-source source="LOCAL" name="Django default" uuid="427f8466-b37c-452f-b010-41ce0b600180">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
 </component>
