@@ -17,6 +17,23 @@
        {% else %}
             <strong>There are no categories present.</strong>
        {% endif %}
+        </br>
+        <h1>Top 5 pages</h1>
+
+        {% if pages %}
+            <ul>
+                {% for page in pages %}
+                <li><a href="{{ page.url }}">{{ page.title }}</a>{{ page.category }}({{ page.views }} view(s))</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <strong>There are no categories present.</strong>
+        {% endif %}
+        </br>
+
+        <a href="/rango/about/">About</a><br/>
+    <a href="/rango/add_category/">Add a New Category</a>
+
 
     </body> <!-- this is a loop that prints each category -->
 </html>

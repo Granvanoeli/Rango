@@ -5,9 +5,9 @@
     </head>
 
     <body>
-        <h1>{{ category_name }}</h1>
-        {% if category %}
-            {% if pages %}
+        <h1>{{ category_name_url }}</h1>
+
+        {% if pages %}
             <ul>
                 {% for page in pages %}
                 <li><a href="{{ page.url }}">{{ page.title }}</a></li>
@@ -16,8 +16,8 @@
             {% else %}
                 <strong>No pages currently in category.</strong>
             {% endif %}
-        {% else %}
-            The specified category {{ category_name }} does not exist!
-        {% endif %}
+
+    <a href="/rango/">Index</a><br />
+    <a href="/rango/category/{{ category_name }}/add_page/">Add a Page</a>
     </body>
 </html>
