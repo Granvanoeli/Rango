@@ -253,6 +253,11 @@ def user_login(request):
 # Use the login_required() decorator to ensure only those logged in can access the view.
 
 @login_required
+def restricted(request):
+    return HttpResponse("Since you're logged in, you can see this text!")
+
+
+@login_required
 def user_logout(request):
     # Since we know the user is logged in, we can now just log them out.
     logout(request)
